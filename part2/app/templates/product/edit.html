@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class='error'>{{error_msg if error_mag != None}}</div>
+    
+    <form action='{{url_for('product_edit_save',id=id)}}' method='post'>
+        <div><input type="submit" value="Save"></div>
+        
+        <div> 
+        <label>Name</label>
+        <input type='text' name='name' value='{{name if name  != None}}'>
+        </div>
+        
+        <div>
+        <label>Price</label>
+        <input type='text' name='price' value='{{price if price  != None}}'>
+        </div>
+
+        <div>
+        <label>Quantity</label>
+        <input type='text' name='quantity' value='{{quantity if quantity  != None}}'>
+        </div>
+
+        <div>
+        <label>Category</label>
+        <select name='category_id'>
+            {% for row in cursor %}
+                 {% if category_id and category_id|int == row[0] %}
+                    <option value='{{row[0]}}' selected="selected"> {{ row[1] }} </option>
+                {% else %}
+                    <option value='{{row[0]}}'> {{ row[1] }} </option>
+                {% endif %}
+            {% endfor %}
+        </select>
+        </div>
+
+
+        <div><input type="submit" value="Save"></div>
+    </form>
+{% endblock %}

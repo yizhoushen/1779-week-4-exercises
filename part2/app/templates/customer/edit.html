@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class='error'>{{error_msg if error_mag != None}}</div>
+    
+    <form action='{{url_for('customer_edit_save',id=id)}}' method='post'>
+        <div><input type="submit" value="Save"></div>
+        
+        <div> 
+        <label>Name</label>
+        <input type='text' name='name' value='{{name if name  != None}}'>
+        </div>
+        
+        <div>
+        <label>Email</label>
+        <input type='text' name='email' value='{{email if email  != None}}'>
+        </div>
+
+        <div><input type="submit" value="Save"></div>
+    </form>
+{% endblock %}

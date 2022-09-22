@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <form action="{{url_for('product_create')}}" method="get">
+        <input type="submit" value="New">
+    </form>
+
+    <table /> 
+    <thead> 
+           <th>ID</th>
+           <th>Name</th>
+           <th>Price</th>
+           <th>Quantity</th>
+           <th>Category</th>
+           
+    </thead> 
+    {% for row in cursor %}
+        <tr>
+            <td>{{ row[0]}}</td> 
+            <td>{{ row[1]}}</td> 
+            <td>{{ row[2]}}</td> 
+            <td>{{ row[3]}}</td> 
+            <td>{{ row[4]}}</td>
+
+
+            <td>
+                <form action="{{url_for('product_edit',id=row[0])}}" method='get'>
+                    <input type='submit' value='Edit' />
+                </form>
+            </td>
+            <td>
+                <form action="{{url_for('product_delete',id=row[0])}}" method='post' onsubmit='return confirm("Are you sure?")'>
+                    <input type='submit' value='Delete' />
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

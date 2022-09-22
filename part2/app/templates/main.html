@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <h1>Home</h1>
+    <ul>
+        <li><a href="{{url_for('trivial')}}">Trivial</a></li>
+        <li><a href="{{url_for('product_list')}}">Product</a></li>
+        <li><a href="{{url_for('customer_list')}}">Customer</a></li>
+        <li><a href="{{url_for('category_list')}}">Category</a></li>
+
+        <li>
+            <form action="{{url_for('product_buy')}}" method="post">
+                <input type="submit" value="Buy">
+                <select name='product_id'>
+                {% for row in products %}
+                    <option value='{{row[0]}}'>{{row[1]}}, Available:{{row[2]}}</option>
+                {% endfor %}
+                </select>
+
+                <select name='customer_id'>
+                {% for row in customers %}
+                    <option value='{{row[0]}}'> {{ row[1] }} </option>
+                {% endfor %}
+                </select>
+
+
+            </form>
+        </li>
+
+    </ul>
+
+    </body>
+</html>
