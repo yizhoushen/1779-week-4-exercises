@@ -43,7 +43,7 @@ the Week4: Perform section.
 
 
 2. Write a query that returns only the name and the quantity of available items
-for of all products that cost between 15 and 20.  You can use the following code
+for all products that cost between 15 and 20.  You can use the following code
 as a starting point:
 ```
    SELECT *
@@ -62,7 +62,7 @@ as a starting point:
 
 ### Set Up Instructions:
 
-You will once again be running a flask app locally on your machine, so all set-up from Week 2's exercises applies to this week as well. 
+You will once again be running a flask app locally on your machine, so all set-up from Week 3's exercises applies to this week as well. 
 In addition to the flask app set-up, make sure that you have:
 
 - Connector/Python installed
