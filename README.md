@@ -58,7 +58,7 @@ as a starting point:
    FROM estore.product as p join estore.category c;
 ```
 
-## Part 2: Complete the following exercises in the part 2 folder:
+## Part 2: Complete the following exercises in the Part2 folder:
 
 ### Set Up Instructions:
 
