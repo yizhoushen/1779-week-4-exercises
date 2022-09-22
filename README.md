@@ -21,22 +21,22 @@ Resources to help with this task:
 Install mysql onto your machine.
 
 Start your SQL server
-$ mysql.server start
+``` $ mysql.server start ```
 
 Start mysql
-$ mysql -u root -p
+``` $ mysql -u root -p ```
 
-source estore.sql;
-use estore;
+``` source estore.sql;```
+``` use estore; ```
 
 ### Exercises:
 
 1. Write a query that returns all information for the customer with id = 2.
 You can use the following code as a starting point:
-
+```
    SELECT *
    FROM estore.customer;
-
+```
    
 Enter the name of the above customer on [PCRS](https://pcrs.teach.cs.toronto.edu/ECE1779-2022-09/content/quests) by completing the question on
 the Week4: Perform section.
@@ -45,17 +45,18 @@ the Week4: Perform section.
 2. Write a query that returns only the name and the quantity of available items
 for of all products that cost between 15 and 20.  You can use the following code
 as a starting point:
-
+```
    SELECT *
    FROM estore.product;
-
+```
 
 3. Write a query that returns the names of all products and the name of their
 category.  You can use the following code
 as a starting point:
-
+```
    SELECT p.name as "Product Name", c.name as "Category Name"
    FROM estore.product as p join estore.category c;
+```
 
 ## Part 2: Complete the following exercises in the part 2 folder:
 
