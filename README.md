@@ -12,9 +12,9 @@ contains some example queries.
 
 Resources to help with this task:
 
-https://www.w3schools.com/sql/sql_select.asp
-https://www.w3schools.com/sql/sql_join_inner.asp
-https://www.w3schools.com/sql/sql_where.asp
+- https://www.w3schools.com/sql/sql_select.asp
+- https://www.w3schools.com/sql/sql_join_inner.asp
+- https://www.w3schools.com/sql/sql_where.asp
 
 ### Set Up Instructions:
 
