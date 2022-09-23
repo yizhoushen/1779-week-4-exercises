@@ -60,11 +60,14 @@ as a starting point:
 
 ## Part 2: Complete the following exercises in the Part2 folder:
 
+### Disclaimer: in this part, we ask you to use SQL from your own machine, and to hard-code your credentials into the application. While this may work for local testing, we warn you against doing this in any production environment. You may even create a new user with limited privillages to use for this exercise.
+
 ### Set Up Instructions:
 
 You will once again be running a flask app locally on your machine, so all set-up from Week 3's exercises applies to this week as well. 
 In addition to the flask app set-up, make sure that you have:
 
+- changed the SQL configurations to your own credentials in Part2/app/config.py
 - Connector/Python installed
 (https://dev.mysql.com/doc/connector-python/en/connector-python-installation-binary.html)
 - Your SQL server running.
