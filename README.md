@@ -78,7 +78,7 @@ Note: your app will be running on http://[your-pirvate-ip]:5000
 
 #### Important: remember to stop and restart the run.py whenever you make a change to the code. The flask server needs to reload the code everytime a change is made.
 
-### Once you have finished the exercises, go to [PCRS](https://pcrs.teach.cs.toronto.edu/ECE1779-2022-09/content/quests) to answer the questions for Week 4.
+### Once you have finished the exercises, go to [PCRS](https://pcrs.teach.cs.toronto.edu/ECE1779-2022-09/content/quests) to answer the question for Week 4.
 
 
 
