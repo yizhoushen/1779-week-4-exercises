@@ -5,10 +5,7 @@ The following exercises are intended to help familiarize you with SQL databases 
 ## Part 1: Complete the following exercises using the Part1 folder:
 
 
-You will use the terminal and the command line tool mysql to execute SQL
-queries on the estore database. Open the file estore_diagram.png to see an
-entity-relationship diagram of the database. The file example_queries.txt
-contains some example queries.
+You will use the command line tool mysql to execute SQL queries on the estore database. Open the file estore_diagram.png to see an entity-relationship diagram of the database. The file example_queries.txt contains some example queries.
 
 Resources to help with this task:
 
@@ -27,6 +24,7 @@ Start mysql
 ``` $ mysql -u root -p ```
 
 ``` source estore.sql;```
+   
 ``` use estore; ```
 
 ### Exercises:
@@ -37,10 +35,6 @@ You can use the following code as a starting point:
    SELECT *
    FROM estore.customer;
 ```
-   
-Enter the name of the above customer on [PCRS](https://pcrs.teach.cs.toronto.edu/ECE1779-2022-09/content/quests) by completing the question on
-the Week4: Perform section.
-
 
 2. Write a query that returns only the name and the quantity of available items
 for all products that cost between 15 and 20.  You can use the following code
@@ -68,8 +62,7 @@ You will once again be running a flask app locally on your machine, so all set-u
 In addition to the flask app set-up, make sure that you have:
 
 - changed the SQL configurations to your own credentials in Part2/app/config.py
-- Connector/Python installed
-(https://dev.mysql.com/doc/connector-python/en/connector-python-installation-binary.html)
+- Connector/Python installed (https://dev.mysql.com/doc/connector-python/en/connector-python-installation-binary.html)
 - Your SQL server running.
 
 Then run the flask application. 
@@ -77,16 +70,15 @@ Note: your app will be running on http://[your-pirvate-ip]:5000
 
 ### Exercises: 
 
-1) Add the necessary code to the function category_list located in the file
-app/category.py so that it display all the data in the category table.
+1) Add the necessary code to the function category_list located in the file app/category.py so that it displays all the data in the category table.
 
-2) Add the necessary code to the function category_create_save located in
-the file app/category.py so that it insert a new record to the category table.
+2) Add the necessary code to the function category_create_save located in the file app/category.py so that it inserts a new record to the category table.
 
-3) Modify the query in the function product_list in the file app/product.py so
-that it the result also includes the category name for each product.
+3) Modify the query in the function product_list in the file app/product.py so that the result also includes the category name for each product.
 
 #### Important: remember to stop and restart the run.py whenever you make a change to the code. The flask server needs to reload the code everytime a change is made.
+
+### Once you have finished the exercises, go to [PCRS](https://pcrs.teach.cs.toronto.edu/ECE1779-2022-09/content/quests) to answer the questions for Week 4.
 
 
 
