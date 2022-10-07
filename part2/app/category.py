@@ -40,7 +40,7 @@ def category_list():
     # The offical MySQl documentation for the Select statement feature can be found here: https://dev.mysql.com/doc/refman/8.0/en/select.html
     # Tip: start with the W3 schools website first because it is simpler as it has enough information for you to compelte this task.
 
-    query = '''SELECT '''
+    query = "SELECT * FROM category"
 
     ## your code ends here
 
@@ -72,7 +72,7 @@ def category_create_save():
     # The offical MySQl documentation for the Insert statement feature can be found here: https://dev.mysql.com/doc/refman/8.0/en/insert.html
     ## your code start here
 
-    query = '''INSERT INTO '''
+    query = '''INSERT INTO category (name) VALUES (%s) '''
 
     ## your code ends here
 

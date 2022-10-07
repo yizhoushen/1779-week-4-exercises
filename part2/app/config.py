@@ -1,4 +1,4 @@
-db_config = {'user': '',
-             'password': '',
+db_config = {'user': 'dbadmin',
+             'password': 'admin1234',
              'host': '127.0.0.1',
              'database': 'estore'}

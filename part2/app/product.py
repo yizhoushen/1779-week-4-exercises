@@ -38,8 +38,9 @@ def product_list():
     cursor = cnx.cursor()
 
     # your code start here
-    query = ''' SELECT p.id, p.name, p.price, p.quantity
-                FROM product p
+    query = ''' SELECT p.id, p.name, p.price, p.quantity, c.name
+                FROM product p join category c
+                WHERE p.category_id = c.id
             '''
     # your code ends here
 
